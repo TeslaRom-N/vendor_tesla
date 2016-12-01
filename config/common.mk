@@ -78,6 +78,11 @@ PRODUCT_PACKAGES += \
     Basic \
     LiveWallpapersPicker
 
+# Include explicitly to work around GMS issues
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full \
+    librsjni
+
 # AudioFX
 PRODUCT_PACKAGES += \
     AudioFX
