@@ -93,7 +93,8 @@ PRODUCT_PACKAGES += \
     KernelAdiutor \
     Eleven \
     OmniSwitch \
-    Calculator  
+    Calculator \
+    Snap 
     
 # Extra tools
 PRODUCT_PACKAGES += \
