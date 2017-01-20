@@ -94,7 +94,8 @@ PRODUCT_PACKAGES += \
     Eleven \
     OmniSwitch \
     Calculator \
-    Snap 
+    Snap \
+    OmniJaws
     
 # Extra tools
 PRODUCT_PACKAGES += \
