@@ -93,7 +93,8 @@ PRODUCT_PACKAGES += \
     OmniSwitch \
     Calculator \
     Snap \
-    OmniJaws
+    OmniJaws \
+    OmniStyle
     
 # Extra tools
 PRODUCT_PACKAGES += \
