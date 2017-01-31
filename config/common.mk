@@ -92,7 +92,8 @@ PRODUCT_PACKAGES += \
     Eleven \
     OmniSwitch \
     Calculator \
-    OmniJaws
+    OmniJaws \
+    OmniStyle
     
 # Extra tools
 PRODUCT_PACKAGES += \
