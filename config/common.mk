@@ -87,7 +87,7 @@ PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt \
     SlimOTA \
-    masquerade \
+    ThemeInterfacer \
     KernelAdiutor \
     Eleven \
     OmniSwitch \
