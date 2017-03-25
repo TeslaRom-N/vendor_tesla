@@ -129,8 +129,9 @@ vendor/tesla/prebuilt/common/app/Nova.apk:system/app/Nova.apk
 PRODUCT_COPY_FILES += \
 vendor/tesla/prebuilt/common/app/adaway.apk:system/app/adaway.apk
 
-ifeq ($(DEFAULT_ROOT_METHOD),magisk)
-# Magisk Manager
+ifeq ($(DEFAULT_ROOT_METHOD),rootless)
+else
+# Magisk Manager --> default root method
 PRODUCT_PACKAGES += \
     MagiskManager
 # Copy Magisk zip
