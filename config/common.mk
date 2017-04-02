@@ -107,6 +107,11 @@ PRODUCT_PACKAGES += \
     ntfsfix \
     ntfs-3g
 
+# Include explicitly to workaround GMS issue
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full \
+    librsjni
+
 # DU Utils Library
 PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
