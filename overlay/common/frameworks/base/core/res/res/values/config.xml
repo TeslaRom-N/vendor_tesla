@@ -56,6 +56,9 @@
          correctly use them when installed on your device.  Otherwise, keep this disabled
          so that applications can still use their own mechanisms. -->
     <bool name="config_enableAutoPowerModes">true</bool>
+     
+    <!-- Night display  -->
+    <bool name="config_nightDisplayAvailable">true</bool>
 
 </resources>
 
