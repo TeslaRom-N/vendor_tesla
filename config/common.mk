@@ -91,7 +91,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt \
-    SlimOTA \
     ThemeInterfacer \
     KernelAdiutor \
     Eleven \
@@ -100,7 +99,8 @@ PRODUCT_PACKAGES += \
     Snap \
     OmniJaws \
     OmniStyle \
-    Turbo
+    Turbo \
+    GZRoms
     
 # Extra tools
 PRODUCT_PACKAGES += \
