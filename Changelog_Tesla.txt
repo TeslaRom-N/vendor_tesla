@@ -1,0 +1,218 @@
+====================
+     06-13-2017
+====================
+
+
+   * build/
+e59181f envi: changelog generation added
+381ff6e Use 'release-keys' for build tag
+
+   * packages/apps/KernelAdiutor/
+a85796f Merge pull request #2 from TeslaRom-N/n7.1.1
+
+   * vendor/tesla/
+998859a script: generate changelog for last 15days
+d4a476b Add the    *s list
+
+====================
+     06-12-2017
+====================
+
+
+   * frameworks/base/
+2db796f Frameworks AppOps: Enable MODE_IGNORED for OP_WAKE_LOCK
+
+   * manifest/
+ffc622f remove Slim OTA
+
+   * packages/apps/DUI/
+a0803eb Pulse: Navbar left in landscape support
+
+   * packages/apps/Settings/
+6ca3e9a Move Feature List to TeslaAbout.java
+e28395f remove Website in about Tesla
+2ee2a08 Settings: Add GZRoms App to About phone/device and remove Slim OTA
+
+   * vendor/tesla/
+debf4c7 Update GZRApp 3.1
+9102f9d Do not sign the prebuilt apps again
+80f9a65 GZRoms App - signed v3.0
+e932ad7 Move Nova to BUILD_PREBUILT
+070f734 Include GZRoms App into the builds and remove Slim OTA
+
+====================
+     06-11-2017
+====================
+
+
+   * frameworks/base/
+cecdd62 QS: Remove listeners only if added
+9762567 Update font size of date and time on QS panel
+
+   * packages/apps/DUI/
+0311299 New Smartbar icons to match Pixel theme
+
+====================
+     06-10-2017
+====================
+
+
+====================
+     06-09-2017
+====================
+
+
+   * frameworks/base/
+09bc304 Enable power save config of system apps [1/2]
+c96d6a2 Fix SystemUI FC due to Google Assistant
+ef92b91 Slim Recents: allow to disable round corners for cards [1/3]
+
+   * packages/apps/DUI/
+271af29 SmartBar: Touch sound support
+
+   * packages/apps/Settings/
+a8adf62 Settings: enable power save config of system apps [2/2]
+b4904f5 Allow sorting applications by size
+7ab4794 Settings: enable fast scroll for all app list views
+
+   * packages/apps/SlimRecents/
+4d4da50 Close recents panel after drag-cards-for-multiwindow action
+acb8bdd Slim Recents: allow to disable round corners for cards [2/3]
+
+   * packages/apps/TeslaCoil/
+f107c8a Slim Recents: allow to disable round corners for cards [3/3]
+
+   * system/sepolicy/
+77b015f Add policy to fix interfacer derp on boot
+
+   * vendor/tesla/
+fbcd24d v4.2
+
+====================
+     06-08-2017
+====================
+
+
+   * vendor/tesla/
+49898a3 Update Nova 5.2
+
+====================
+     06-07-2017
+====================
+
+
+   * build/
+b00b019 [DO NOT MERGE] Update Security String to 2017-06-05 for nyc-dev
+bdb221f [DO NOT MERGE] Update Security String to 2017-06-01 for nyc-dev
+01cb78c Version bump to NJH47B
+
+   * frameworks/base/
+b8d185c Fix issue with saving admins before finishing loading.
+595688d resolve merge conflicts of ad4aa1ce7d3d to nyc-mr1-dev fix conflict in nyc-mr2-release (cherry picked from commit f806d65e615b942c268a5f68d44bde9d55634972)
+
+   * hardware/qcom/audio-caf/msm8996/
+2c343db msm8996: ultrasound: Initial open source hal for Elliptic Ultrasound
+6e2beb0 audio policy: reduce audio routing commands trafic
+
+   * hardware/qcom/display-caf/msm8996/
+0f92b9a Merge "sdm: Set layer frame rate if not specified."
+e00d283 sdm: Increase SurfaceFlinger fd limits
+
+   * hardware/qcom/media-caf/msm8996/
+fd47554 mm-video-v4l2: venc: Initialize allocate native handle variable
+87bbde9 mm-video-v4l2: Initialize extradata fd to -1
+d568144 mm-video-v4l2: venc: Fix double close on fd
+91569c2 mm-video-v4l2: Close output buffer dup fd only if valid
+939e293 mm-video-v4l2: create pthread with valid file descriptors
+698defc Merge tag 'LA.UM.5.5.r1-03800-8x96.0' into cm-14.1-caf-8996
+a040978 mm-video-v4l2: vidc: correct the crop update
+6b11d95 Merge 69058718422addd0dc9c2ebfc6857d0ebd22d6ca on remote branch
+
+   * libcore/
+760160f Reject ftp URLConnection containing /r/n in user info.
+b061355 Test for rejection of ftp URL with /r/n in userinfo
+
+   * manifest/
+0089722 r17
+
+   * packages/apps/Bluetooth/
+8abc157 BluetoothOppTransferActivity: fix after ad46f6a52d7240ed1e2127c4263a5cbcf454df09
+3c30144 Merge tag 'android-7.1.2_r17' into n7.1.2
+
+   * packages/apps/KernelAdiutor/
+d386afb Merge pull request #1 from Druboo666/n7.1.1
+
+   * system/bt/
+f33d8e4 Check LE advertising data length before caching advertising records
+
+   * system/core/
+4546360 Fix out of bound read in libziparchive
+840e7bb libcutils: remove schedgroup fds [DO NOT MERGE]
+
+====================
+     06-06-2017
+====================
+
+
+   * manifest/
+e74408d add cm's external_bson
+
+   * packages/apps/TeslaCoil/
+ed22a37 Disable grid recents by default
+
+====================
+     06-05-2017
+====================
+
+
+   * packages/apps/KernelAdiutor/
+0033068 CPU: Stop assuming all 4 core cpus are big/little
+4f69fcc Revert "Fix calculation of big.LITTLE cores on SD82*"
+
+   * vendor/tesla/
+6454ed8 add gemini for Robert
+
+====================
+     06-04-2017
+====================
+
+
+====================
+     06-03-2017
+====================
+
+
+   * frameworks/base/
+157daf1 daynight: try to fix the ugly white in notifications
+
+====================
+     06-02-2017
+====================
+
+
+====================
+     06-01-2017
+====================
+
+
+====================
+     05-31-2017
+====================
+
+
+   * hardware/libhardware/
+80f3254 hardware: Enable Soter for Android N
+83e1efe audio: add parameter for device shutdown notification
+
+   * system/keymaster/
+d6b44dd keymaster: Enable Soter for Android N
+
+====================
+     05-30-2017
+====================
+
+
+   * manifest/
+04091e1 Fix qcom_media and omniswitch for 712 branches
+d26b44c bring back 5.x tc for addison kernel
+
