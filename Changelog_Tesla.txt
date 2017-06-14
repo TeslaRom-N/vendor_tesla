@@ -1,16 +1,31 @@
 ====================
+     06-14-2017
+====================
+
+
+   * frameworks/base/
+aa27149 Revert "Add support for page theme color to WebView and WebChromeClient."
+3698aa0 Add support for page theme color to WebView and WebChromeClient.
+
+   * manifest/
+bfe3dae track Jelly from TipsyOS
+
+   * packages/apps/Settings/
+09b80db ChangeLog: Now points to CL in vendor as hotlink
+
+   * vendor/tesla/
+a7f55da build Jelly
+
+====================
      06-13-2017
 ====================
 
 
    * build/
 e59181f envi: changelog generation added
-381ff6e Use 'release-keys' for build tag
-
-   * packages/apps/KernelAdiutor/
-a85796f Merge pull request #2 from TeslaRom-N/n7.1.1
 
    * vendor/tesla/
+f932607 Generate changelog 06/13
 998859a script: generate changelog for last 15days
 d4a476b Add the    *s list
 
@@ -19,14 +34,28 @@ d4a476b Add the    *s list
 ====================
 
 
+   * build/
+381ff6e Use 'release-keys' for build tag
+
+   * packages/apps/KernelAdiutor/
+a85796f Merge pull request #2 from TeslaRom-N/n7.1.1
+
+====================
+     06-11-2017
+====================
+
+
    * frameworks/base/
 2db796f Frameworks AppOps: Enable MODE_IGNORED for OP_WAKE_LOCK
+cecdd62 QS: Remove listeners only if added
+9762567 Update font size of date and time on QS panel
 
    * manifest/
 ffc622f remove Slim OTA
 
    * packages/apps/DUI/
 a0803eb Pulse: Navbar left in landscape support
+0311299 New Smartbar icons to match Pixel theme
 
    * packages/apps/Settings/
 6ca3e9a Move Feature List to TeslaAbout.java
@@ -39,18 +68,6 @@ debf4c7 Update GZRApp 3.1
 80f9a65 GZRoms App - signed v3.0
 e932ad7 Move Nova to BUILD_PREBUILT
 070f734 Include GZRoms App into the builds and remove Slim OTA
-
-====================
-     06-11-2017
-====================
-
-
-   * frameworks/base/
-cecdd62 QS: Remove listeners only if added
-9762567 Update font size of date and time on QS panel
-
-   * packages/apps/DUI/
-0311299 New Smartbar icons to match Pixel theme
 
 ====================
      06-10-2017
@@ -85,19 +102,27 @@ f107c8a Slim Recents: allow to disable round corners for cards [3/3]
    * system/sepolicy/
 77b015f Add policy to fix interfacer derp on boot
 
-   * vendor/tesla/
-fbcd24d v4.2
-
 ====================
      06-08-2017
 ====================
 
 
    * vendor/tesla/
-49898a3 Update Nova 5.2
+fbcd24d v4.2
 
 ====================
      06-07-2017
+====================
+
+
+   * packages/apps/KernelAdiutor/
+d386afb Merge pull request #1 from Druboo666/n7.1.1
+
+   * vendor/tesla/
+49898a3 Update Nova 5.2
+
+====================
+     06-06-2017
 ====================
 
 
@@ -139,9 +164,6 @@ b061355 Test for rejection of ftp URL with /r/n in userinfo
 8abc157 BluetoothOppTransferActivity: fix after ad46f6a52d7240ed1e2127c4263a5cbcf454df09
 3c30144 Merge tag 'android-7.1.2_r17' into n7.1.2
 
-   * packages/apps/KernelAdiutor/
-d386afb Merge pull request #1 from Druboo666/n7.1.1
-
    * system/bt/
 f33d8e4 Check LE advertising data length before caching advertising records
 
@@ -150,7 +172,7 @@ f33d8e4 Check LE advertising data length before caching advertising records
 840e7bb libcutils: remove schedgroup fds [DO NOT MERGE]
 
 ====================
-     06-06-2017
+     06-05-2017
 ====================
 
 
@@ -161,7 +183,7 @@ e74408d add cm's external_bson
 ed22a37 Disable grid recents by default
 
 ====================
-     06-05-2017
+     06-04-2017
 ====================
 
 
@@ -173,22 +195,17 @@ ed22a37 Disable grid recents by default
 6454ed8 add gemini for Robert
 
 ====================
-     06-04-2017
-====================
-
-
-====================
      06-03-2017
 ====================
 
-
-   * frameworks/base/
-157daf1 daynight: try to fix the ugly white in notifications
 
 ====================
      06-02-2017
 ====================
 
+
+   * frameworks/base/
+157daf1 daynight: try to fix the ugly white in notifications
 
 ====================
      06-01-2017
@@ -200,19 +217,6 @@ ed22a37 Disable grid recents by default
 ====================
 
 
-   * hardware/libhardware/
-80f3254 hardware: Enable Soter for Android N
-83e1efe audio: add parameter for device shutdown notification
-
    * system/keymaster/
 d6b44dd keymaster: Enable Soter for Android N
-
-====================
-     05-30-2017
-====================
-
-
-   * manifest/
-04091e1 Fix qcom_media and omniswitch for 712 branches
-d26b44c bring back 5.x tc for addison kernel
 
