@@ -24,6 +24,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.debug.alloc=0
 
+# Use non debug dexpreopter
+USE_DEX2OAT_DEBUG ?= false
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/tesla/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
