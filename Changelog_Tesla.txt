@@ -1,4 +1,73 @@
 ====================
+     06-16-2017
+====================
+
+
+   * art/
+0a6b2e7 art: switch to -O3 completely
+f1d26b1 art: build: Fix defines for USE_DEX2OAT_DEBUG
+3091c70 build: switch ART to performance mode if possible
+1ae07ed libsighain: use -Os opt level
+d215b25 Strip everything
+
+   * build/
+1dbedbf Create 0 compression ratio jar files
+a933b08 core: use 0 compression when creating the target_files package
+
+   * frameworks/base/
+21e6dda Merge branch 'cys' into n7.1.2
+4475167 SettingsLib: Add two more animation speed steps
+aee0a50 telephony: Hack GSM and LTE signal strength
+3945912 Reduce hwui CPU time by using glDrawRangeElements
+621bc91 base: kill some log spam
+d36664c DropBoxManagerService: fix system server crash caused by uncaught exception
+1036246 Fix potential heap memory leakage.
+a2cc358 fwb: disable debugging we arent intrested in
+8e87966 AudioService: Fix camera shutter sound toggle
+f4e5642 fwb: allow faster app switching
+e12b66a Optimised hwui rounded corners shader
+224f996 Remove FastJNI optimization on AssetManager to avoid dead lock.
+69039fd aapt: allow opting out of uncompressed aapt
+90a6881 StorageManager: Improve exception handling
+fd4071d frameworks/base: reduce the setTransactions
+3cdc483 Night mode auto brightness: code cleanup and improvements [1/2]
+f06a154 Resolve deadlock between ActivityManagerService and PowerManagerService
+3863d07 Avoid deadlock when installing app
+
+   * packages/apps/Settings/
+ec7808a Night mode auto brightness: code cleanup and improvements [2/2]
+d9cb1cd Night ligh auto brightness: menu improvements
+
+   * packages/apps/SlimRecents/
+8d189cc Slim Recents: fix iterator FC
+
+   * system/core/
+a8c43dc Set zygote process priority to -20 to speed up VM startup time.
+b7b06d4 liblog: filter GalleryDatab*
+150c6e7 liblog: Silence spammy logs from camera blobs (AEC_PORT and mm-camera)
+
+   * vendor/tesla/
+e64749a config: use non debug dexpreopter
+
+====================
+     06-15-2017
+====================
+
+
+   * frameworks/base/
+967d016 Remove fwb navbar drawables, to use DUI drawables
+
+   * packages/apps/DUI/
+19e57da Change menu drawables
+
+   * packages/apps/Settings/
+09b80db ChangeLog: Now points to CL in vendor as hotlink
+
+   * vendor/tesla/
+a294616 Update Nova 5.3-beta1
+0f99e5f changelog 06/14
+
+====================
      06-14-2017
 ====================
 
@@ -10,8 +79,15 @@ aa27149 Revert "Add support for page theme color to WebView and WebChromeClient.
    * manifest/
 bfe3dae track Jelly from TipsyOS
 
-   * packages/apps/Settings/
-09b80db ChangeLog: Now points to CL in vendor as hotlink
+   * packages/apps/Snap/
+a93602e Snap: Sign with platform key
+6e1bbb1 Add orientation correction for landscape devices
+b709ca5 Snap: Simulate back button press when menu back button is pressed
+d400d76 SnapdragonCamera: Fix torch mode with continuous shot
+8371216 Revert "Snap: CaptureModule: lock exposure also when precapture trigger is started"
+0ddabff SnapdragonCamera: Camera2 force close after focused
+e7483a4 SnapdragonCamera: GPS location can't be turn On in camera settings
+d15fb45 Fixed camera crash on exit
 
    * vendor/tesla/
 a7f55da build Jelly
@@ -23,6 +99,7 @@ a7f55da build Jelly
 
    * build/
 e59181f envi: changelog generation added
+381ff6e Use 'release-keys' for build tag
 
    * vendor/tesla/
 f932607 Generate changelog 06/13
@@ -34,28 +111,17 @@ d4a476b Add the    *s list
 ====================
 
 
-   * build/
-381ff6e Use 'release-keys' for build tag
-
-   * packages/apps/KernelAdiutor/
-a85796f Merge pull request #2 from TeslaRom-N/n7.1.1
-
-====================
-     06-11-2017
-====================
-
-
    * frameworks/base/
 2db796f Frameworks AppOps: Enable MODE_IGNORED for OP_WAKE_LOCK
-cecdd62 QS: Remove listeners only if added
-9762567 Update font size of date and time on QS panel
 
    * manifest/
 ffc622f remove Slim OTA
 
    * packages/apps/DUI/
 a0803eb Pulse: Navbar left in landscape support
-0311299 New Smartbar icons to match Pixel theme
+
+   * packages/apps/KernelAdiutor/
+a85796f Merge pull request #2 from TeslaRom-N/n7.1.1
 
    * packages/apps/Settings/
 6ca3e9a Move Feature List to TeslaAbout.java
@@ -68,6 +134,18 @@ debf4c7 Update GZRApp 3.1
 80f9a65 GZRoms App - signed v3.0
 e932ad7 Move Nova to BUILD_PREBUILT
 070f734 Include GZRoms App into the builds and remove Slim OTA
+
+====================
+     06-11-2017
+====================
+
+
+   * frameworks/base/
+cecdd62 QS: Remove listeners only if added
+9762567 Update font size of date and time on QS panel
+
+   * packages/apps/DUI/
+0311299 New Smartbar icons to match Pixel theme
 
 ====================
      06-10-2017
@@ -115,6 +193,24 @@ fbcd24d v4.2
 ====================
 
 
+   * hardware/qcom/audio-caf/msm8996/
+2c343db msm8996: ultrasound: Initial open source hal for Elliptic Ultrasound
+6e2beb0 audio policy: reduce audio routing commands trafic
+
+   * hardware/qcom/display-caf/msm8996/
+0f92b9a Merge "sdm: Set layer frame rate if not specified."
+e00d283 sdm: Increase SurfaceFlinger fd limits
+
+   * hardware/qcom/media-caf/msm8996/
+fd47554 mm-video-v4l2: venc: Initialize allocate native handle variable
+87bbde9 mm-video-v4l2: Initialize extradata fd to -1
+d568144 mm-video-v4l2: venc: Fix double close on fd
+91569c2 mm-video-v4l2: Close output buffer dup fd only if valid
+939e293 mm-video-v4l2: create pthread with valid file descriptors
+698defc Merge tag 'LA.UM.5.5.r1-03800-8x96.0' into cm-14.1-caf-8996
+a040978 mm-video-v4l2: vidc: correct the crop update
+6b11d95 Merge 69058718422addd0dc9c2ebfc6857d0ebd22d6ca on remote branch
+
    * packages/apps/KernelAdiutor/
 d386afb Merge pull request #1 from Druboo666/n7.1.1
 
@@ -134,24 +230,6 @@ bdb221f [DO NOT MERGE] Update Security String to 2017-06-01 for nyc-dev
    * frameworks/base/
 b8d185c Fix issue with saving admins before finishing loading.
 595688d resolve merge conflicts of ad4aa1ce7d3d to nyc-mr1-dev fix conflict in nyc-mr2-release (cherry picked from commit f806d65e615b942c268a5f68d44bde9d55634972)
-
-   * hardware/qcom/audio-caf/msm8996/
-2c343db msm8996: ultrasound: Initial open source hal for Elliptic Ultrasound
-6e2beb0 audio policy: reduce audio routing commands trafic
-
-   * hardware/qcom/display-caf/msm8996/
-0f92b9a Merge "sdm: Set layer frame rate if not specified."
-e00d283 sdm: Increase SurfaceFlinger fd limits
-
-   * hardware/qcom/media-caf/msm8996/
-fd47554 mm-video-v4l2: venc: Initialize allocate native handle variable
-87bbde9 mm-video-v4l2: Initialize extradata fd to -1
-d568144 mm-video-v4l2: venc: Fix double close on fd
-91569c2 mm-video-v4l2: Close output buffer dup fd only if valid
-939e293 mm-video-v4l2: create pthread with valid file descriptors
-698defc Merge tag 'LA.UM.5.5.r1-03800-8x96.0' into cm-14.1-caf-8996
-a040978 mm-video-v4l2: vidc: correct the crop update
-6b11d95 Merge 69058718422addd0dc9c2ebfc6857d0ebd22d6ca on remote branch
 
    * libcore/
 760160f Reject ftp URLConnection containing /r/n in user info.
@@ -182,6 +260,9 @@ e74408d add cm's external_bson
    * packages/apps/TeslaCoil/
 ed22a37 Disable grid recents by default
 
+   * vendor/tesla/
+6454ed8 add gemini for Robert
+
 ====================
      06-04-2017
 ====================
@@ -190,9 +271,6 @@ ed22a37 Disable grid recents by default
    * packages/apps/KernelAdiutor/
 0033068 CPU: Stop assuming all 4 core cpus are big/little
 4f69fcc Revert "Fix calculation of big.LITTLE cores on SD82*"
-
-   * vendor/tesla/
-6454ed8 add gemini for Robert
 
 ====================
      06-03-2017
@@ -206,17 +284,4 @@ ed22a37 Disable grid recents by default
 
    * frameworks/base/
 157daf1 daynight: try to fix the ugly white in notifications
-
-====================
-     06-01-2017
-====================
-
-
-====================
-     05-31-2017
-====================
-
-
-   * system/keymaster/
-d6b44dd keymaster: Enable Soter for Android N
 
