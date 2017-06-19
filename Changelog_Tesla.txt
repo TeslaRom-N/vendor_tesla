@@ -1,152 +1,175 @@
 ====================
+     06-19-2017
+====================
+
+
+   * vendor/tesla/
+ac762b1  changelog_tipsy: more info and bling  [Martinusbe]
+b773ad9     *s: remove despair tc  [Martinusbe]
+====================
+     06-18-2017
+====================
+
+
+   * vendor/tesla/
+6e92445  Update Nova 5.3-beta2  [Mirko]
+1c4ef58  Update Magisk Manager 5.0.2, Update Magisk Zip 13.0  [Mirko]
+====================
+     06-17-2017
+====================
+
+
+   * manifest/
+6138d25  Track arm-eabi-5.x from tipsylab  [Prema Chand Alugu]
+   * packages/apps/Settings/
+f2ff7c5  Correctly align cursor in DPI settings (smallest width)  [PMS22]
+   * vendor/tesla/
+ea999f0  update changelog  [Prema Chand Alugu]
+====================
      06-16-2017
 ====================
 
 
    * art/
-0a6b2e7 art: switch to -O3 completely
-f1d26b1 art: build: Fix defines for USE_DEX2OAT_DEBUG
-3091c70 build: switch ART to performance mode if possible
-1ae07ed libsighain: use -Os opt level
-d215b25 Strip everything
-
+0a6b2e7  art: switch to -O3 completely  [CheckYourScreen]
+f1d26b1  art: build: Fix defines for USE_DEX2OAT_DEBUG  [Alex Naidis]
+3091c70  build: switch ART to performance mode if possible  [Alex Naidis]
+1ae07ed  libsighain: use -Os opt level  [CheckYourScreen]
+d215b25  Strip everything  [Park Ju Hyung]
    * build/
-1dbedbf Create 0 compression ratio jar files
-a933b08 core: use 0 compression when creating the target_files package
-
+1dbedbf  Create 0 compression ratio jar files  [arter97]
+a933b08  core: use 0 compression when creating the target_files package  [Park Ju Hyung]
    * frameworks/base/
-21e6dda Merge branch 'cys' into n7.1.2
-4475167 SettingsLib: Add two more animation speed steps
-aee0a50 telephony: Hack GSM and LTE signal strength
-3945912 Reduce hwui CPU time by using glDrawRangeElements
-621bc91 base: kill some log spam
-d36664c DropBoxManagerService: fix system server crash caused by uncaught exception
-1036246 Fix potential heap memory leakage.
-a2cc358 fwb: disable debugging we arent intrested in
-8e87966 AudioService: Fix camera shutter sound toggle
-f4e5642 fwb: allow faster app switching
-e12b66a Optimised hwui rounded corners shader
-224f996 Remove FastJNI optimization on AssetManager to avoid dead lock.
-69039fd aapt: allow opting out of uncompressed aapt
-90a6881 StorageManager: Improve exception handling
-fd4071d frameworks/base: reduce the setTransactions
-3cdc483 Night mode auto brightness: code cleanup and improvements [1/2]
-f06a154 Resolve deadlock between ActivityManagerService and PowerManagerService
-3863d07 Avoid deadlock when installing app
-
+2208bb9  fingerprint: handle PerformanceStats NULL pointers  [Ícaro Hoff]
+01e5325  fingerprint: Speed up wake-and-unlock scenario  [Sultanxda]
+21e6dda  Merge branch 'cys' into n7.1.2  [CheckYourScreen]
+4475167  SettingsLib: Add two more animation speed steps  [Alex Naidis]
+aee0a50  telephony: Hack GSM and LTE signal strength  [Sultanxda]
+3945912  Reduce hwui CPU time by using glDrawRangeElements  [Arun]
+621bc91  base: kill some log spam  [maxwen]
+d36664c  DropBoxManagerService: fix system server crash caused by uncaught exception  [songjinshi]
+1036246  Fix potential heap memory leakage.  [adrian_hung]
+a2cc358  fwb: disable debugging we arent intrested in  [CheckYourScreen]
+8e87966  AudioService: Fix camera shutter sound toggle  [Alex Naidis]
+f4e5642  fwb: allow faster app switching  [CheckYourScreen]
+e12b66a  Optimised hwui rounded corners shader  [Arun]
+224f996  Remove FastJNI optimization on AssetManager to avoid dead lock.  [Tim Zhang]
+69039fd  aapt: allow opting out of uncompressed aapt  [Alex Naidis]
+90a6881  StorageManager: Improve exception handling  [Alex Naidis]
+fd4071d  frameworks/base: reduce the setTransactions  [Sanjeev Jakkilinki]
+3cdc483  Night mode auto brightness: code cleanup and improvements [1/2]  [ezio84]
+f06a154  Resolve deadlock between ActivityManagerService and PowerManagerService  [Shibin George]
+3863d07  Avoid deadlock when installing app  [Kazuki Nakayama]
    * packages/apps/Settings/
-ec7808a Night mode auto brightness: code cleanup and improvements [2/2]
-d9cb1cd Night ligh auto brightness: menu improvements
-
+ec7808a  Night mode auto brightness: code cleanup and improvements [2/2]  [ezio84]
+d9cb1cd  Night ligh auto brightness: menu improvements  [beanstown106]
    * packages/apps/SlimRecents/
-8d189cc Slim Recents: fix iterator FC
-
+8d189cc  Slim Recents: fix iterator FC  [ezio84]
+   * packages/apps/Snap/
+bc85c32  SnapdragonCamera: Fix ghosting when non-zsl in VGA/QVGA size  [mingwax]
+19e2eb7  SnapdragonCamera: Fix live shot image stretch when recording is 4K  [mingwax]
+fc7907d  SnapdragonCamera: Fix photo reversed when enable selfie Mirror  [mingwax]
+0c3eaa8  SnapdragonCamera: Fix photo reversed when enable selfie Mirror  [mingwax]
+ee896fe  SnapdragonCamera: Fix preview in wrong size  [junjiez]
+befc7f9  SnapdragonCamera: Fix front camera preview flipped  [junjiez]
+f0c69d6  SnapdragonCamera: Fix preview is flipped on 8996  [junjiez]
+be13276  SnapdragonCamera: Camera1 Selfie Mirror orientation check  [Jack Yoo]
+d6dc834  SnapdragonCamera: Fix Camera1 force close when refocusing the picture.  [pezhan]
+1924cfc  SnapdragonCamera: Change video snapshot picture size logic  [Byunghun Jeon]
+6346554  SnapdragonCamera: Avoid cancel AF shortly after trigger  [junjiez]
+a08aea5  SnapdragonCamera: Fix crash during UI stress test  [juwei]
+617751e  SnapdragonCamera: Fix OutOfBoundsException in monkey test  [mingwax]
+1f4f11f  SnapdragonCamera: Fix FC for NullPointerException  [mingwax]
+857221d  SnapdragonCamera: Reset zoom value when resuming  [Byunghun Jeon]
+326c4f1  SnapdragonCamera: Fix capture with flash will get black image.  [qimengp]
+c824d23  SnapdragonCamera: Fix FC cause by Null pointer  [qimengp]
+526c179  SnapdragonCamera: Make copy of location before altering timestamp  [Jay Wang]
    * system/core/
-a8c43dc Set zygote process priority to -20 to speed up VM startup time.
-b7b06d4 liblog: filter GalleryDatab*
-150c6e7 liblog: Silence spammy logs from camera blobs (AEC_PORT and mm-camera)
-
+a8c43dc  Set zygote process priority to -20 to speed up VM startup time.  [Vitalii Tomkiv]
+b7b06d4  liblog: filter GalleryDatab*  [Simao Gomes Viana]
+150c6e7  liblog: Silence spammy logs from camera blobs (AEC_PORT and mm-camera)  [Sultanxda]
    * vendor/tesla/
-e64749a config: use non debug dexpreopter
-
+e64749a  config: use non debug dexpreopter  [CheckYourScreen]
 ====================
      06-15-2017
 ====================
 
 
    * frameworks/base/
-967d016 Remove fwb navbar drawables, to use DUI drawables
-
+967d016  Remove fwb navbar drawables, to use DUI drawables  [Alex Cruz]
    * packages/apps/DUI/
-19e57da Change menu drawables
-
+19e57da  Change menu drawables  [Alex Cruz]
    * packages/apps/Settings/
-09b80db ChangeLog: Now points to CL in vendor as hotlink
-
+09b80db  ChangeLog: Now points to CL in vendor as hotlink  [Prema Chand Alugu]
+   * packages/apps/Snap/
+a93602e  Snap: Sign with platform key  [Arne Coucheron]
+6e1bbb1  Add orientation correction for landscape devices  [andralex8]
+b709ca5  Snap: Simulate back button press when menu back button is pressed  [Gabriele M]
+d400d76  SnapdragonCamera: Fix torch mode with continuous shot  [Jay Wang]
+8371216  Revert "Snap: CaptureModule: lock exposure also when precapture trigger is started"  [codeworkx]
+0ddabff  SnapdragonCamera: Camera2 force close after focused  [weijiew]
+e7483a4  SnapdragonCamera: GPS location can't be turn On in camera settings  [weijiew]
+d15fb45  Fixed camera crash on exit  [Valerio Pilo]
    * vendor/tesla/
-a294616 Update Nova 5.3-beta1
-0f99e5f changelog 06/14
-
+a294616  Update Nova 5.3-beta1  [Mirko]
+0f99e5f  changelog 06/14  [Prema Chand Alugu]
 ====================
      06-14-2017
 ====================
 
 
    * frameworks/base/
-aa27149 Revert "Add support for page theme color to WebView and WebChromeClient."
-3698aa0 Add support for page theme color to WebView and WebChromeClient.
-
+aa27149  Revert "Add support for page theme color to WebView and WebChromeClient."  [Mirko]
+3698aa0  Add support for page theme color to WebView and WebChromeClient.  [Danny Baumann]
    * manifest/
-bfe3dae track Jelly from TipsyOS
-
-   * packages/apps/Snap/
-a93602e Snap: Sign with platform key
-6e1bbb1 Add orientation correction for landscape devices
-b709ca5 Snap: Simulate back button press when menu back button is pressed
-d400d76 SnapdragonCamera: Fix torch mode with continuous shot
-8371216 Revert "Snap: CaptureModule: lock exposure also when precapture trigger is started"
-0ddabff SnapdragonCamera: Camera2 force close after focused
-e7483a4 SnapdragonCamera: GPS location can't be turn On in camera settings
-d15fb45 Fixed camera crash on exit
-
+bfe3dae  track Jelly from TipsyOS  [Mirko]
    * vendor/tesla/
-a7f55da build Jelly
-
+a7f55da  build Jelly  [Martinusbe]
 ====================
      06-13-2017
 ====================
 
 
    * build/
-e59181f envi: changelog generation added
-381ff6e Use 'release-keys' for build tag
-
+e59181f  envi: changelog generation added  [Prema Chand Alugu]
+381ff6e  Use 'release-keys' for build tag  [Sultanxda]
    * vendor/tesla/
-f932607 Generate changelog 06/13
-998859a script: generate changelog for last 15days
-d4a476b Add the    *s list
-
+f932607  Generate changelog 06/13  [Prema Chand Alugu]
+998859a  script: generate changelog for last 15days  [Prema Chand Alugu]
+d4a476b  Add the    *s list  [Prema Chand Alugu]
 ====================
      06-12-2017
 ====================
 
 
    * frameworks/base/
-2db796f Frameworks AppOps: Enable MODE_IGNORED for OP_WAKE_LOCK
-
+2db796f  Frameworks AppOps: Enable MODE_IGNORED for OP_WAKE_LOCK  [Sam Mortimer]
    * manifest/
-ffc622f remove Slim OTA
-
+ffc622f  remove Slim OTA  [Mirko]
    * packages/apps/DUI/
-a0803eb Pulse: Navbar left in landscape support
-
+a0803eb  Pulse: Navbar left in landscape support  [Ezio Lacandia Bijelkic]
    * packages/apps/KernelAdiutor/
-a85796f Merge pull request #2 from TeslaRom-N/n7.1.1
-
+a85796f  Merge pull request #2 from TeslaRom-N/n7.1.1  [martin coulon]
    * packages/apps/Settings/
-6ca3e9a Move Feature List to TeslaAbout.java
-e28395f remove Website in about Tesla
-2ee2a08 Settings: Add GZRoms App to About phone/device and remove Slim OTA
-
+6ca3e9a  Move Feature List to TeslaAbout.java  [Mirko]
+e28395f  remove Website in about Tesla  [Mirko]
+2ee2a08  Settings: Add GZRoms App to About phone/device and remove Slim OTA  [Prema Chand Alugu]
    * vendor/tesla/
-debf4c7 Update GZRApp 3.1
-9102f9d Do not sign the prebuilt apps again
-80f9a65 GZRoms App - signed v3.0
-e932ad7 Move Nova to BUILD_PREBUILT
-070f734 Include GZRoms App into the builds and remove Slim OTA
-
+debf4c7  Update GZRApp 3.1  [Prema Chand Alugu]
+9102f9d  Do not sign the prebuilt apps again  [Prema Chand Alugu]
+80f9a65  GZRoms App - signed v3.0  [Prema Chand Alugu]
+e932ad7  Move Nova to BUILD_PREBUILT  [Martinusbe]
+070f734  Include GZRoms App into the builds and remove Slim OTA  [Prema Chand Alugu]
 ====================
      06-11-2017
 ====================
 
 
    * frameworks/base/
-cecdd62 QS: Remove listeners only if added
-9762567 Update font size of date and time on QS panel
-
+cecdd62  QS: Remove listeners only if added  [Gabriele M]
+9762567  Update font size of date and time on QS panel  [tomomi hasegawa]
    * packages/apps/DUI/
-0311299 New Smartbar icons to match Pixel theme
-
+0311299  New Smartbar icons to match Pixel theme  [Alex Cruz]
 ====================
      06-10-2017
 ====================
@@ -158,96 +181,77 @@ cecdd62 QS: Remove listeners only if added
 
 
    * frameworks/base/
-09bc304 Enable power save config of system apps [1/2]
-c96d6a2 Fix SystemUI FC due to Google Assistant
-ef92b91 Slim Recents: allow to disable round corners for cards [1/3]
-
+09bc304  Enable power save config of system apps [1/2]  [maxwen]
+c96d6a2  Fix SystemUI FC due to Google Assistant  [ezio84]
+ef92b91  Slim Recents: allow to disable round corners for cards [1/3]  [ezio84]
    * packages/apps/DUI/
-271af29 SmartBar: Touch sound support
-
+271af29  SmartBar: Touch sound support  [bigrushdog]
    * packages/apps/Settings/
-a8adf62 Settings: enable power save config of system apps [2/2]
-b4904f5 Allow sorting applications by size
-7ab4794 Settings: enable fast scroll for all app list views
-
+a8adf62  Settings: enable power save config of system apps [2/2]  [maxwen]
+b4904f5  Allow sorting applications by size  [Roman Royer]
+7ab4794  Settings: enable fast scroll for all app list views  [maxwen]
    * packages/apps/SlimRecents/
-4d4da50 Close recents panel after drag-cards-for-multiwindow action
-acb8bdd Slim Recents: allow to disable round corners for cards [2/3]
-
+4d4da50  Close recents panel after drag-cards-for-multiwindow action  [ezio84]
+acb8bdd  Slim Recents: allow to disable round corners for cards [2/3]  [ezio84]
    * packages/apps/TeslaCoil/
-f107c8a Slim Recents: allow to disable round corners for cards [3/3]
-
+f107c8a  Slim Recents: allow to disable round corners for cards [3/3]  [ezio84]
    * system/sepolicy/
-77b015f Add policy to fix interfacer derp on boot
-
+77b015f  Add policy to fix interfacer derp on boot  [Surge Raval]
 ====================
      06-08-2017
 ====================
 
 
    * vendor/tesla/
-fbcd24d v4.2
-
+fbcd24d  v4.2  [Mirko]
 ====================
      06-07-2017
 ====================
 
 
+   * build/
+b00b019  [DO NOT MERGE] Update Security String to 2017-06-05 for nyc-dev  [Adam Seaton]
+bdb221f  [DO NOT MERGE] Update Security String to 2017-06-01 for nyc-dev  [Adam Seaton]
+01cb78c  Version bump to NJH47B  [android-build-team Robot]
+   * frameworks/base/
+b8d185c  Fix issue with saving admins before finishing loading.  [Kenny Guy]
+595688d  resolve merge conflicts of ad4aa1ce7d3d to nyc-mr1-dev fix conflict in nyc-mr2-release (cherry picked from commit f806d65e615b942c268a5f68d44bde9d55634972)  [Andrew Scull]
    * hardware/qcom/audio-caf/msm8996/
-2c343db msm8996: ultrasound: Initial open source hal for Elliptic Ultrasound
-6e2beb0 audio policy: reduce audio routing commands trafic
-
+2c343db  msm8996: ultrasound: Initial open source hal for Elliptic Ultrasound  [Balázs Triszka]
+6e2beb0  audio policy: reduce audio routing commands trafic  [Zhou Song]
    * hardware/qcom/display-caf/msm8996/
-0f92b9a Merge "sdm: Set layer frame rate if not specified."
-e00d283 sdm: Increase SurfaceFlinger fd limits
-
+0f92b9a  Merge "sdm: Set layer frame rate if not specified."  [Linux Build Service Account]
+e00d283  sdm: Increase SurfaceFlinger fd limits  [Naseer Ahmed]
    * hardware/qcom/media-caf/msm8996/
-fd47554 mm-video-v4l2: venc: Initialize allocate native handle variable
-87bbde9 mm-video-v4l2: Initialize extradata fd to -1
-d568144 mm-video-v4l2: venc: Fix double close on fd
-91569c2 mm-video-v4l2: Close output buffer dup fd only if valid
-939e293 mm-video-v4l2: create pthread with valid file descriptors
-698defc Merge tag 'LA.UM.5.5.r1-03800-8x96.0' into cm-14.1-caf-8996
-a040978 mm-video-v4l2: vidc: correct the crop update
-6b11d95 Merge 69058718422addd0dc9c2ebfc6857d0ebd22d6ca on remote branch
-
+fd47554  mm-video-v4l2: venc: Initialize allocate native handle variable  [Deepak Kushwah]
+87bbde9  mm-video-v4l2: Initialize extradata fd to -1  [Surajit Podder]
+d568144  mm-video-v4l2: venc: Fix double close on fd  [Abdulla Anam]
+91569c2  mm-video-v4l2: Close output buffer dup fd only if valid  [Surajit Podder]
+939e293  mm-video-v4l2: create pthread with valid file descriptors  [Karthikeyan Periasamy]
+698defc  Merge tag 'LA.UM.5.5.r1-03800-8x96.0' into cm-14.1-caf-8996  [Bruno Martins]
+a040978  mm-video-v4l2: vidc: correct the crop update  [Manikanta Kanamarlapudi]
+6b11d95  Merge 69058718422addd0dc9c2ebfc6857d0ebd22d6ca on remote branch  [Linux Build Service Account]
+   * libcore/
+760160f  Reject ftp URLConnection containing /r/n in user info.  [Przemyslaw Szczepaniak]
+b061355  Test for rejection of ftp URL with /r/n in userinfo  [Przemyslaw Szczepaniak]
+   * manifest/
+0089722  r17  [martin coulon]
+   * packages/apps/Bluetooth/
+8abc157  BluetoothOppTransferActivity: fix after ad46f6a52d7240ed1e2127c4263a5cbcf454df09  [Dan Pasanen]
+3c30144  Merge tag 'android-7.1.2_r17' into n7.1.2  [Dan Pasanen]
    * packages/apps/KernelAdiutor/
-d386afb Merge pull request #1 from Druboo666/n7.1.1
-
+d386afb  Merge pull request #1 from Druboo666/n7.1.1  [martin coulon]
+   * system/bt/
+f33d8e4  Check LE advertising data length before caching advertising records  [Jack He]
+   * system/core/
+4546360  Fix out of bound read in libziparchive  [Tianjie Xu]
+840e7bb  libcutils: remove schedgroup fds [DO NOT MERGE]  [Wei Wang]
    * vendor/tesla/
-49898a3 Update Nova 5.2
-
+49898a3  Update Nova 5.2  [Prema Chand Alugu]
 ====================
      06-06-2017
 ====================
 
-
-   * build/
-b00b019 [DO NOT MERGE] Update Security String to 2017-06-05 for nyc-dev
-bdb221f [DO NOT MERGE] Update Security String to 2017-06-01 for nyc-dev
-01cb78c Version bump to NJH47B
-
-   * frameworks/base/
-b8d185c Fix issue with saving admins before finishing loading.
-595688d resolve merge conflicts of ad4aa1ce7d3d to nyc-mr1-dev fix conflict in nyc-mr2-release (cherry picked from commit f806d65e615b942c268a5f68d44bde9d55634972)
-
-   * libcore/
-760160f Reject ftp URLConnection containing /r/n in user info.
-b061355 Test for rejection of ftp URL with /r/n in userinfo
-
-   * manifest/
-0089722 r17
-
-   * packages/apps/Bluetooth/
-8abc157 BluetoothOppTransferActivity: fix after ad46f6a52d7240ed1e2127c4263a5cbcf454df09
-3c30144 Merge tag 'android-7.1.2_r17' into n7.1.2
-
-   * system/bt/
-f33d8e4 Check LE advertising data length before caching advertising records
-
-   * system/core/
-4546360 Fix out of bound read in libziparchive
-840e7bb libcutils: remove schedgroup fds [DO NOT MERGE]
 
 ====================
      06-05-2017
@@ -255,33 +259,8 @@ f33d8e4 Check LE advertising data length before caching advertising records
 
 
    * manifest/
-e74408d add cm's external_bson
-
+e74408d  add cm's external_bson  [Alx31]
    * packages/apps/TeslaCoil/
-ed22a37 Disable grid recents by default
-
+ed22a37  Disable grid recents by default  [desaishivam26]
    * vendor/tesla/
-6454ed8 add gemini for Robert
-
-====================
-     06-04-2017
-====================
-
-
-   * packages/apps/KernelAdiutor/
-0033068 CPU: Stop assuming all 4 core cpus are big/little
-4f69fcc Revert "Fix calculation of big.LITTLE cores on SD82*"
-
-====================
-     06-03-2017
-====================
-
-
-====================
-     06-02-2017
-====================
-
-
-   * frameworks/base/
-157daf1 daynight: try to fix the ugly white in notifications
-
+6454ed8  add gemini for Robert  [Alx31]
