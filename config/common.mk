@@ -105,6 +105,7 @@ PRODUCT_PACKAGES += \
     Turbo \
     GZRoms \
     Nova \
+    NovaGoogleCompanion \
     Jelly
     
 # Extra tools
