@@ -1,9 +1,86 @@
 ====================
+     06-26-2017
+====================
+
+
+====================
+     06-25-2017
+====================
+
+
+   * frameworks/base/
+085cfdf  Add vector for notification volume mute  [Mirko]
+73a11b0  Unlink ringtone/notification: add notification string  [Mirko]
+   * packages/apps/DUI/
+63f95d0  French Translations  [Mirko]
+8f794e7  Update RU translations  [Mirko]
+f834deb  French Translations  [Mirko]
+e5c69e4  French Translations  [Mirko]
+8164a37  Update RU translations  [Mirko]
+d5188b7  Modify Hungarian translation  [Mirko]
+9dba6f5  Media arrows: hide them on keyguard bouncer  [Mirko]
+17207ef  String changes  [Mirko]
+b9ca771  Automatic translation import  [Mirko]
+   * packages/services/OmniJaws/
+8ae5c30  OmniJaws: add pinWheel directions for wind  [Mirko]
+365cf89  OmniJaws: update README.md to include OWM API key usage info  [Mirko]
+8452fc7  OmniJaws: update README.md  [Mirko]
+9f8cb66  Automatic translation import  [Mirko]
+916a53e  Automatic translation import  [Mirko]
+aba3db0  Automatic translation import  [Mirko]
+4c6b453  Automatic translation import  [Mirko]
+003c1f4  Automatic translation import  [Mirko]
+d822003  Automatic translation import  [Mirko]
+====================
+     06-24-2017
+====================
+
+
+   * device/qcom/common/
+efdc267  power: add msm8998 support from CAF tag LA.UM.5.7.r2-00900-8x98.0  [Martinusbe]
+   * device/qcom/sepolicy/
+47c775a  Rename msmcobalt to msm8998  [Martinusbe]
+====================
+     06-23-2017
+====================
+
+
+   * packages/apps/TeslaCoil/
+81f4011  Add OmniSwitch under Multitasking  [Mirko]
+   * vendor/tesla/
+df36fb5  Update Nova Google Companion 1.1  [Mirko]
+09ee4aa  Update Nova 5.3-beta3  [Mirko]
+9cc12af  Add Nova Google Companion 1.0  [Mirko]
+====================
+     06-22-2017
+====================
+
+
+====================
+     06-21-2017
+====================
+
+
+====================
+     06-20-2017
+====================
+
+
+   * frameworks/base/
+d7ce002  Fix div by zero for QS tile extreme cases  [Mirko]
+0961fd3  Adjust quickbar tile gap  [Mirko]
+   * packages/apps/Dialer/
+8b8b3ac  Fixed Dialer crash issue when finish dialpad immediately  [Mirko]
+b41a777  Dialer: lock screen appear before incoming call screen  [Mirko]
+   * packages/apps/Settings/
+ac537a8  Correctly align cursor in renaming BT device  [Mirko]
+====================
      06-19-2017
 ====================
 
 
    * vendor/tesla/
+e988836  update changelog  [Prema Chand Alugu]
 80a3c09  Revert "author in changelong instead of committer"  [Prema Chand Alugu]
 8496e40  update changelog  [Prema Chand Alugu]
 7b46b76  author in changelong instead of committer  [Prema Chand Alugu]
@@ -26,8 +103,6 @@ b773ad9     *s: remove despair tc  [Prema Chand Alugu]
 6138d25  Track arm-eabi-5.x from tipsylab  [Prema Chand Alugu]
    * packages/apps/Settings/
 f2ff7c5  Correctly align cursor in DPI settings (smallest width)  [Mirko]
-   * vendor/tesla/
-ea999f0  update changelog  [Prema Chand Alugu]
 ====================
      06-16-2017
 ====================
@@ -92,6 +167,7 @@ a8c43dc  Set zygote process priority to -20 to speed up VM startup time.  [Check
 b7b06d4  liblog: filter GalleryDatab*  [CheckYourScreen]
 150c6e7  liblog: Silence spammy logs from camera blobs (AEC_PORT and mm-camera)  [CheckYourScreen]
    * vendor/tesla/
+ea999f0  update changelog  [Prema Chand Alugu]
 e64749a  config: use non debug dexpreopter  [CheckYourScreen]
 ====================
      06-15-2017
@@ -135,7 +211,6 @@ a7f55da  build Jelly  [Mirko]
 
    * build/
 e59181f  envi: changelog generation added  [Prema Chand Alugu]
-381ff6e  Use 'release-keys' for build tag  [Martinusbe]
    * vendor/tesla/
 f932607  Generate changelog 06/13  [Prema Chand Alugu]
 998859a  script: generate changelog for last 15days  [Prema Chand Alugu]
@@ -145,125 +220,7 @@ d4a476b  Add the    *s list  [Prema Chand Alugu]
 ====================
 
 
-   * frameworks/base/
-2db796f  Frameworks AppOps: Enable MODE_IGNORED for OP_WAKE_LOCK  [Mirko]
-   * manifest/
-ffc622f  remove Slim OTA  [Mirko]
-   * packages/apps/DUI/
-a0803eb  Pulse: Navbar left in landscape support  [Mirko]
+   * build/
+381ff6e  Use 'release-keys' for build tag  [Martinusbe]
    * packages/apps/KernelAdiutor/
 a85796f  Merge pull request #2 from TeslaRom-N/n7.1.1  [GitHub]
-   * packages/apps/Settings/
-6ca3e9a  Move Feature List to TeslaAbout.java  [Mirko]
-e28395f  remove Website in about Tesla  [Mirko]
-2ee2a08  Settings: Add GZRoms App to About phone/device and remove Slim OTA  [Mirko]
-   * vendor/tesla/
-debf4c7  Update GZRApp 3.1  [Mirko]
-9102f9d  Do not sign the prebuilt apps again  [Mirko]
-80f9a65  GZRoms App - signed v3.0  [Mirko]
-e932ad7  Move Nova to BUILD_PREBUILT  [Mirko]
-070f734  Include GZRoms App into the builds and remove Slim OTA  [Mirko]
-====================
-     06-11-2017
-====================
-
-
-   * frameworks/base/
-cecdd62  QS: Remove listeners only if added  [Mirko]
-9762567  Update font size of date and time on QS panel  [Mirko]
-   * packages/apps/DUI/
-0311299  New Smartbar icons to match Pixel theme  [Mirko]
-====================
-     06-10-2017
-====================
-
-
-====================
-     06-09-2017
-====================
-
-
-   * frameworks/base/
-09bc304  Enable power save config of system apps [1/2]  [Mirko]
-c96d6a2  Fix SystemUI FC due to Google Assistant  [Mirko]
-ef92b91  Slim Recents: allow to disable round corners for cards [1/3]  [Mirko]
-   * packages/apps/DUI/
-271af29  SmartBar: Touch sound support  [Mirko]
-   * packages/apps/Settings/
-a8adf62  Settings: enable power save config of system apps [2/2]  [Mirko]
-b4904f5  Allow sorting applications by size  [Mirko]
-7ab4794  Settings: enable fast scroll for all app list views  [Mirko]
-   * packages/apps/SlimRecents/
-4d4da50  Close recents panel after drag-cards-for-multiwindow action  [Mirko]
-acb8bdd  Slim Recents: allow to disable round corners for cards [2/3]  [Mirko]
-   * packages/apps/TeslaCoil/
-f107c8a  Slim Recents: allow to disable round corners for cards [3/3]  [Mirko]
-   * system/sepolicy/
-77b015f  Add policy to fix interfacer derp on boot  [Mirko]
-====================
-     06-08-2017
-====================
-
-
-   * vendor/tesla/
-fbcd24d  v4.2  [Mirko]
-====================
-     06-07-2017
-====================
-
-
-   * hardware/qcom/audio-caf/msm8996/
-2c343db  msm8996: ultrasound: Initial open source hal for Elliptic Ultrasound  [Martinusbe]
-6e2beb0  audio policy: reduce audio routing commands trafic  [Martinusbe]
-   * hardware/qcom/display-caf/msm8996/
-0f92b9a  Merge "sdm: Set layer frame rate if not specified."  [Martinusbe]
-e00d283  sdm: Increase SurfaceFlinger fd limits  [Martinusbe]
-   * hardware/qcom/media-caf/msm8996/
-fd47554  mm-video-v4l2: venc: Initialize allocate native handle variable  [Martinusbe]
-87bbde9  mm-video-v4l2: Initialize extradata fd to -1  [Martinusbe]
-d568144  mm-video-v4l2: venc: Fix double close on fd  [Martinusbe]
-91569c2  mm-video-v4l2: Close output buffer dup fd only if valid  [Martinusbe]
-939e293  mm-video-v4l2: create pthread with valid file descriptors  [Martinusbe]
-698defc  Merge tag 'LA.UM.5.5.r1-03800-8x96.0' into cm-14.1-caf-8996  [Martinusbe]
-a040978  mm-video-v4l2: vidc: correct the crop update  [Martinusbe]
-6b11d95  Merge 69058718422addd0dc9c2ebfc6857d0ebd22d6ca on remote branch  [Martinusbe]
-   * packages/apps/KernelAdiutor/
-d386afb  Merge pull request #1 from Druboo666/n7.1.1  [GitHub]
-   * vendor/tesla/
-49898a3  Update Nova 5.2  [Prema Chand Alugu]
-====================
-     06-06-2017
-====================
-
-
-   * build/
-b00b019  [DO NOT MERGE] Update Security String to 2017-06-05 for nyc-dev  [Martinusbe]
-bdb221f  [DO NOT MERGE] Update Security String to 2017-06-01 for nyc-dev  [Martinusbe]
-01cb78c  Version bump to NJH47B  [Martinusbe]
-   * frameworks/base/
-b8d185c  Fix issue with saving admins before finishing loading.  [Martinusbe]
-595688d  resolve merge conflicts of ad4aa1ce7d3d to nyc-mr1-dev fix conflict in nyc-mr2-release (cherry picked from commit f806d65e615b942c268a5f68d44bde9d55634972)  [Martinusbe]
-   * libcore/
-760160f  Reject ftp URLConnection containing /r/n in user info.  [Martinusbe]
-b061355  Test for rejection of ftp URL with /r/n in userinfo  [Martinusbe]
-   * manifest/
-0089722  r17  [GitHub]
-   * packages/apps/Bluetooth/
-8abc157  BluetoothOppTransferActivity: fix after ad46f6a52d7240ed1e2127c4263a5cbcf454df09  [Martinusbe]
-3c30144  Merge tag 'android-7.1.2_r17' into n7.1.2  [Martinusbe]
-   * system/bt/
-f33d8e4  Check LE advertising data length before caching advertising records  [Martinusbe]
-   * system/core/
-4546360  Fix out of bound read in libziparchive  [Martinusbe]
-840e7bb  libcutils: remove schedgroup fds [DO NOT MERGE]  [Martinusbe]
-====================
-     06-05-2017
-====================
-
-
-   * manifest/
-e74408d  add cm's external_bson  [GitHub]
-   * packages/apps/TeslaCoil/
-ed22a37  Disable grid recents by default  [desaishivam26]
-   * vendor/tesla/
-6454ed8  add gemini for Robert  [GitHub]
