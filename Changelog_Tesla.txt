@@ -1,16 +1,88 @@
 ====================
-     06-26-2017
-====================
-
-
-====================
-     06-25-2017
+     07-03-2017
 ====================
 
 
    * frameworks/base/
-085cfdf  Add vector for notification volume mute  [Mirko]
-73a11b0  Unlink ringtone/notification: add notification string  [Mirko]
+1cb8c85fc74  Fix NPE when changing Display size in Settings  [Prema Chand Alugu]
+====================
+     07-02-2017
+====================
+
+
+   * bionic/
+66052e3f5  Add support for modifying decay timer.  [Martinusbe]
+   * external/jemalloc/
+9013e45  Change the decay timer default to 0.  [Martinusbe]
+9d84cd2  Revert "Allow devices to specify a default decay time"  [Martinusbe]
+7f654f0  Avoid a potential innocuous compiler warning.  [Martinusbe]
+   * hardware/qcom/audio-caf/msm8998/
+227036d1e  hal: Allow building hardware audio encoders  [Martinusbe]
+9e7f3aa5a  fix build error  [Martinusbe]
+2948e7090  audio: Use direct    * pathmap  [Martinusbe]
+   * hardware/qcom/display-caf/msm8998/
+57c7c0e49  Don't build lights module if vendor supplies it  [Martinusbe]
+b40bed75f  display: Use    * pathmap  [Martinusbe]
+   * hardware/qcom/media-caf/msm8998/
+2e56a44d6  mm-video: Disable proprietary extension  [Martinusbe]
+efc4d64c0  venc: Fix VQZip issue  [Martinusbe]
+af5a982a4  media: Avoid collision with FFMPEG plugin  [Martinusbe]
+ebd720eea  vidc: Fix makefiles  [Martinusbe]
+a023385c1  media: Use    * pathmap  [Martinusbe]
+   * packages/apps/OmniStyle/
+f37aec7  add new colors  [Mirko]
+====================
+     07-01-2017
+====================
+
+
+   * frameworks/base/
+096bec7b41a  Fix potential KeyguardMonitor FC on unlock  [Mirko]
+7baf9bc00ba  [1/2] Add support for pulsing battery icon when charging  [Mirko]
+   * packages/apps/DUI/
+18aa312  Fix button size not refreshing after a dpi change  [Mirko]
+   * packages/apps/TeslaCoil/
+c58cc29  [2/2] Add support for pulsing battery icon regardless of style  [Mirko]
+f3687e9  Use theme accent color for icons - Icon colors are synced with Settings icon colors - This should not affect themes that already have   the correct icon coloring for DU-Tweaks, but it   should fix the rest of the themes  [Mirko]
+   * vendor/tesla/
+df11628  Update Nova 5.3  [Mirko]
+====================
+     06-30-2017
+====================
+
+
+====================
+     06-29-2017
+====================
+
+
+   * vendor/tesla/
+053172d  Update Magisk Zip 13.0(54e6a79)  [Mirko]
+====================
+     06-28-2017
+====================
+
+
+   * manifest/
+96ade3a  Merge branch 'n7.1.2' of git pull ya drunk  [Martinusbe]
+110af68  add 8998 HALs from OnePlus OSS  [Martinusbe]
+   * packages/providers/ContactsProvider/
+1ef7feec  Fix merge derp  [Martinusbe]
+====================
+     06-27-2017
+====================
+
+
+   * vendor/tesla/
+95ff3c2  update changelog  [Prema Chand Alugu]
+====================
+     06-26-2017
+====================
+
+
+   * frameworks/base/
+085cfdfce90  Add vector for notification volume mute  [Mirko]
+73a11b05154  Unlink ringtone/notification: add notification string  [Mirko]
    * packages/apps/DUI/
 63f95d0  French Translations  [Mirko]
 8f794e7  Update RU translations  [Mirko]
@@ -32,7 +104,7 @@ aba3db0  Automatic translation import  [Mirko]
 003c1f4  Automatic translation import  [Mirko]
 d822003  Automatic translation import  [Mirko]
 ====================
-     06-24-2017
+     06-25-2017
 ====================
 
 
@@ -40,6 +112,11 @@ d822003  Automatic translation import  [Mirko]
 efdc267  power: add msm8998 support from CAF tag LA.UM.5.7.r2-00900-8x98.0  [Martinusbe]
    * device/qcom/sepolicy/
 47c775a  Rename msmcobalt to msm8998  [Martinusbe]
+====================
+     06-24-2017
+====================
+
+
 ====================
      06-23-2017
 ====================
@@ -67,18 +144,13 @@ df36fb5  Update Nova Google Companion 1.1  [Mirko]
 
 
    * frameworks/base/
-d7ce002  Fix div by zero for QS tile extreme cases  [Mirko]
-0961fd3  Adjust quickbar tile gap  [Mirko]
+d7ce0022ddd  Fix div by zero for QS tile extreme cases  [Mirko]
+0961fd3b681  Adjust quickbar tile gap  [Mirko]
    * packages/apps/Dialer/
-8b8b3ac  Fixed Dialer crash issue when finish dialpad immediately  [Mirko]
-b41a777  Dialer: lock screen appear before incoming call screen  [Mirko]
+8b8b3ac40  Fixed Dialer crash issue when finish dialpad immediately  [Mirko]
+b41a7777d  Dialer: lock screen appear before incoming call screen  [Mirko]
    * packages/apps/Settings/
-ac537a8  Correctly align cursor in renaming BT device  [Mirko]
-====================
-     06-19-2017
-====================
-
-
+ac537a8d2  Correctly align cursor in renaming BT device  [Mirko]
    * vendor/tesla/
 e988836  update changelog  [Prema Chand Alugu]
 80a3c09  Revert "author in changelong instead of committer"  [Prema Chand Alugu]
@@ -87,140 +159,10 @@ e988836  update changelog  [Prema Chand Alugu]
 ac762b1  changelog_tipsy: more info and bling  [Prema Chand Alugu]
 b773ad9     *s: remove despair tc  [Prema Chand Alugu]
 ====================
-     06-18-2017
+     06-19-2017
 ====================
 
 
    * vendor/tesla/
 6e92445  Update Nova 5.3-beta2  [Mirko]
 1c4ef58  Update Magisk Manager 5.0.2, Update Magisk Zip 13.0  [Mirko]
-====================
-     06-17-2017
-====================
-
-
-   * manifest/
-6138d25  Track arm-eabi-5.x from tipsylab  [Prema Chand Alugu]
-   * packages/apps/Settings/
-f2ff7c5  Correctly align cursor in DPI settings (smallest width)  [Mirko]
-====================
-     06-16-2017
-====================
-
-
-   * art/
-0a6b2e7  art: switch to -O3 completely  [CheckYourScreen]
-f1d26b1  art: build: Fix defines for USE_DEX2OAT_DEBUG  [CheckYourScreen]
-3091c70  build: switch ART to performance mode if possible  [CheckYourScreen]
-1ae07ed  libsighain: use -Os opt level  [CheckYourScreen]
-d215b25  Strip everything  [CheckYourScreen]
-   * build/
-1dbedbf  Create 0 compression ratio jar files  [CheckYourScreen]
-a933b08  core: use 0 compression when creating the target_files package  [CheckYourScreen]
-   * frameworks/base/
-2208bb9  fingerprint: handle PerformanceStats NULL pointers  [Martinusbe]
-01e5325  fingerprint: Speed up wake-and-unlock scenario  [Martinusbe]
-21e6dda  Merge branch 'cys' into n7.1.2  [CheckYourScreen]
-4475167  SettingsLib: Add two more animation speed steps  [CheckYourScreen]
-aee0a50  telephony: Hack GSM and LTE signal strength  [CheckYourScreen]
-3945912  Reduce hwui CPU time by using glDrawRangeElements  [CheckYourScreen]
-621bc91  base: kill some log spam  [CheckYourScreen]
-d36664c  DropBoxManagerService: fix system server crash caused by uncaught exception  [CheckYourScreen]
-1036246  Fix potential heap memory leakage.  [CheckYourScreen]
-a2cc358  fwb: disable debugging we arent intrested in  [CheckYourScreen]
-8e87966  AudioService: Fix camera shutter sound toggle  [CheckYourScreen]
-f4e5642  fwb: allow faster app switching  [CheckYourScreen]
-e12b66a  Optimised hwui rounded corners shader  [CheckYourScreen]
-224f996  Remove FastJNI optimization on AssetManager to avoid dead lock.  [CheckYourScreen]
-69039fd  aapt: allow opting out of uncompressed aapt  [CheckYourScreen]
-90a6881  StorageManager: Improve exception handling  [CheckYourScreen]
-fd4071d  frameworks/base: reduce the setTransactions  [CheckYourScreen]
-3cdc483  Night mode auto brightness: code cleanup and improvements [1/2]  [Mirko]
-f06a154  Resolve deadlock between ActivityManagerService and PowerManagerService  [CheckYourScreen]
-3863d07  Avoid deadlock when installing app  [CheckYourScreen]
-   * packages/apps/Settings/
-ec7808a  Night mode auto brightness: code cleanup and improvements [2/2]  [Mirko]
-d9cb1cd  Night ligh auto brightness: menu improvements  [Mirko]
-   * packages/apps/SlimRecents/
-8d189cc  Slim Recents: fix iterator FC  [Mirko]
-   * packages/apps/Snap/
-bc85c32  SnapdragonCamera: Fix ghosting when non-zsl in VGA/QVGA size  [Martinusbe]
-19e2eb7  SnapdragonCamera: Fix live shot image stretch when recording is 4K  [Martinusbe]
-fc7907d  SnapdragonCamera: Fix photo reversed when enable selfie Mirror  [Martinusbe]
-0c3eaa8  SnapdragonCamera: Fix photo reversed when enable selfie Mirror  [Martinusbe]
-ee896fe  SnapdragonCamera: Fix preview in wrong size  [Martinusbe]
-befc7f9  SnapdragonCamera: Fix front camera preview flipped  [Martinusbe]
-f0c69d6  SnapdragonCamera: Fix preview is flipped on 8996  [Martinusbe]
-be13276  SnapdragonCamera: Camera1 Selfie Mirror orientation check  [Martinusbe]
-d6dc834  SnapdragonCamera: Fix Camera1 force close when refocusing the picture.  [Martinusbe]
-1924cfc  SnapdragonCamera: Change video snapshot picture size logic  [Martinusbe]
-6346554  SnapdragonCamera: Avoid cancel AF shortly after trigger  [Martinusbe]
-a08aea5  SnapdragonCamera: Fix crash during UI stress test  [Martinusbe]
-617751e  SnapdragonCamera: Fix OutOfBoundsException in monkey test  [Martinusbe]
-1f4f11f  SnapdragonCamera: Fix FC for NullPointerException  [Martinusbe]
-857221d  SnapdragonCamera: Reset zoom value when resuming  [Martinusbe]
-326c4f1  SnapdragonCamera: Fix capture with flash will get black image.  [Martinusbe]
-c824d23  SnapdragonCamera: Fix FC cause by Null pointer  [Martinusbe]
-526c179  SnapdragonCamera: Make copy of location before altering timestamp  [Martinusbe]
-   * system/core/
-a8c43dc  Set zygote process priority to -20 to speed up VM startup time.  [CheckYourScreen]
-b7b06d4  liblog: filter GalleryDatab*  [CheckYourScreen]
-150c6e7  liblog: Silence spammy logs from camera blobs (AEC_PORT and mm-camera)  [CheckYourScreen]
-   * vendor/tesla/
-ea999f0  update changelog  [Prema Chand Alugu]
-e64749a  config: use non debug dexpreopter  [CheckYourScreen]
-====================
-     06-15-2017
-====================
-
-
-   * frameworks/base/
-967d016  Remove fwb navbar drawables, to use DUI drawables  [Mirko]
-   * packages/apps/DUI/
-19e57da  Change menu drawables  [Mirko]
-   * packages/apps/Settings/
-09b80db  ChangeLog: Now points to CL in vendor as hotlink  [Prema Chand Alugu]
-   * vendor/tesla/
-a294616  Update Nova 5.3-beta1  [Mirko]
-0f99e5f  changelog 06/14  [Prema Chand Alugu]
-====================
-     06-14-2017
-====================
-
-
-   * frameworks/base/
-aa27149  Revert "Add support for page theme color to WebView and WebChromeClient."  [Mirko]
-3698aa0  Add support for page theme color to WebView and WebChromeClient.  [Mirko]
-   * manifest/
-bfe3dae  track Jelly from TipsyOS  [Mirko]
-   * packages/apps/Snap/
-a93602e  Snap: Sign with platform key  [Martinusbe]
-6e1bbb1  Add orientation correction for landscape devices  [Martinusbe]
-b709ca5  Snap: Simulate back button press when menu back button is pressed  [Martinusbe]
-d400d76  SnapdragonCamera: Fix torch mode with continuous shot  [Martinusbe]
-8371216  Revert "Snap: CaptureModule: lock exposure also when precapture trigger is started"  [Martinusbe]
-0ddabff  SnapdragonCamera: Camera2 force close after focused  [Martinusbe]
-e7483a4  SnapdragonCamera: GPS location can't be turn On in camera settings  [Martinusbe]
-d15fb45  Fixed camera crash on exit  [Martinusbe]
-   * vendor/tesla/
-a7f55da  build Jelly  [Mirko]
-====================
-     06-13-2017
-====================
-
-
-   * build/
-e59181f  envi: changelog generation added  [Prema Chand Alugu]
-   * vendor/tesla/
-f932607  Generate changelog 06/13  [Prema Chand Alugu]
-998859a  script: generate changelog for last 15days  [Prema Chand Alugu]
-d4a476b  Add the    *s list  [Prema Chand Alugu]
-====================
-     06-12-2017
-====================
-
-
-   * build/
-381ff6e  Use 'release-keys' for build tag  [Martinusbe]
-   * packages/apps/KernelAdiutor/
-a85796f  Merge pull request #2 from TeslaRom-N/n7.1.1  [GitHub]
