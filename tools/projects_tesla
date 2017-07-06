@@ -232,7 +232,6 @@ platform/external/oauth
 platform/external/objenesis
 platform/external/okhttp
 platform/external/opencv
-platform/external/opencv3
 external_openssh
 platform/external/owasp/sanitizer
 platform/external/parameter-framework

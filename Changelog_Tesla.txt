@@ -1,12 +1,105 @@
 ====================
-     07-03-2017
+     07-07-2017
 ====================
 
 
+   * bionic/
+705a6d225  Merge tag 'android-7.1.2_r23' into n7.1.2  [Mirko]
+   * build/
+dd10f447c  Make change and version bump to NHG47O  [Martinusbe]
+0d64bdea5  [DO NOT MERGE]Updating security string to 2017-07-05 on nyc-dev bug:38342695 (cherry picked from commit 96d958c34509a65e5f7787945f9923fb44c42f05)  [Martinusbe]
+88396a007  [DO NOT MERGE]Updating security string to 2017-07-01 on nyc-dev bug:38342695 (cherry picked from commit 77dad3dfcd677136f6657e1b95dd84ed1be1d728)  [Martinusbe]
+cf43fc093  NHG47N  [Martinusbe]
+19acc29dc  NHG47M  [Martinusbe]
+   * external/skia/
+b932f7496  Set a limit on the size for BMP images DO NOT MERGE  [GtrCraft]
+   * frameworks/av/
+02a092507  Fix memory leak in error case  [GtrCraft]
+abdc1423f  Modifying MetaData invalidates previous char*  [GtrCraft]
+619c33eea  Limit ogg packet size  [GtrCraft]
+df6c29c0a  Prevent OOB write in soft_avc encoder  [GtrCraft]
+e7c267618  Don't allow using or allocating a buffer after the first state transition  [GtrCraft]
+   * frameworks/base/
+ad4563c5193  SmartBar: make button longpress delay configurable [2/3]  [Mirko]
+dfa909f82b5  SystemUI: Fix task lock & freeform buttons placement  [Mirko]
+7559dd5f7d4  SystemUI: Support recents task locking  [Mirko]
+9a0a31df131  ZygoteInit: Remove CAP_SYS_RESOURCE  [GtrCraft]
+ac7fa74217a  system_server: add CAP_SYS_PTRACE  [GtrCraft]
+278cf14679f  Fix re-enabling alert window appop after leaving VR mode.  [GtrCraft]
+774aa6a319d  Make a11y node info parceling more robust  [GtrCraft]
+   * frameworks/native/
+55638c9a7  libgui: check for invalid slot in attachBuffer  [GtrCraft]
+40578fa23  libgui: Check slot received from IGBP in Surface  [GtrCraft]
+960c592de  ui: Fix bad size check in Fence::unflatten  [GtrCraft]
+   * libcore/
+795461ea1  Proper fix for rejecting ftp URL with /r/n.  [GtrCraft]
+   * manifest/
+7959413  manifest: android-7.1.2_r23  [GtrCraft]
+   * packages/apps/DUI/
+d6904f1  Media arrows icons: same size for both skip_next and skip_previous  [Mirko]
+210da8d  SmartBar: make button longpress delay configurable [1/3]  [Mirko]
+   * packages/apps/Settings/
+642f9934e  Fix phishing attack in ChooseLockGeneric  [GtrCraft]
+03dc900b8  resolve merge conflicts of 3964c51bf2 to nyc-dev  [GtrCraft]
+   * packages/apps/TeslaCoil/
+9a9ce8d  SmartBar: make button longpress delay configurable [3/3]  [Mirko]
+   * packages/providers/DownloadProvider/
+6eac568  DO NOT MERGE Deleting downloads for removed uids on downloadprovider start  [GtrCraft]
+   * packages/providers/MediaProvider/
+af46436  [DO NOT MERGE] Enforce user separation on external storage  [GtrCraft]
+   * system/sepolicy/
+e70d8f4  system_server: replace sys_resource with sys_ptrace  [GtrCraft]
+   * vendor/tesla/
+43759d5  Magisk Zip 13.0(c4377ed)  [Mirko]
+cfc4384  Magisk Manager 5.0.3 beta  [Mirko]
+====================
+     07-06-2017
+====================
+
+
+====================
+     07-05-2017
+====================
+
+
+   * bionic/
+c3df0f152  Revert "libm: add AArch32 math instructions"  [CheckYourScreen]
+82bf639c6  Merge pull request #1 from CheckYourScreen/n7.1.2  [GitHub]
+3ba95162c  libc: Fix minor issues in memchr NEON implementation  [CheckYourScreen]
+624cb6b3c  Don't declare SYS_* constants for unavailable __NR_* constants.  [CheckYourScreen]
+4ea7a84aa  Move glibc-syscalls.h into bits/.  [CheckYourScreen]
+b3403bbf5  Fix "libc: import ARM strcmp from newlib"  [CheckYourScreen]
+   * packages/apps/TeslaCoil/
+4521ee3  Quick Settings: Tile animations setSelectable -> setEnabled  [Mirko]
+45f88be  Recents: Disable categories based upon which option is used  [Mirko]
+====================
+     07-04-2017
+====================
+
+
+   * bionic/
+c3b09c4e0  libc: import ARM strcmp from newlib  [CheckYourScreen]
+d3f46c1c1  libc: arm: add NEON-optimized memchr implementation from newlib  [CheckYourScreen]
+3d63bab87  libc: add optimized ARM64 strrchr from newlib  [CheckYourScreen]
+08e7bb39d  Set __ARM_ARCH__ correctly for ARMv8 32bit builds  [CheckYourScreen]
+77f455256  Fix "Unknown token error" when upstream clang is used.  [CheckYourScreen]
+5d2206fd2  libc: memcpy_base: Disable opt for certain targets  [CheckYourScreen]
+2cfa08ce8  libm: add AArch32 math instructions  [CheckYourScreen]
+544374bda  libm: add more aarch64 hardware instructions  [CheckYourScreen]
+0e2fb88c4  linker: convert 'mov pc' instruction to 'bx'  [CheckYourScreen]
+cd6383e58  bionic: arm64: generic: strcmp: align to cache and preload  [CheckYourScreen]
+8f0d4be15  libc: ARM: add Apple strcmp  [CheckYourScreen]
+14a16a870  libc: import ARM strlen from Apple C library  [CheckYourScreen]
+d41e1dbb5  Speed-up ARM memcmp by leveraging NEON.  [CheckYourScreen]
    * frameworks/base/
 1cb8c85fc74  Fix NPE when changing Display size in Settings  [Prema Chand Alugu]
+   * hardware/qcom/keymaster/
+7ff4f5d  keymaster: add msm8996 into support list  [Martinusbe]
+a3428ba  keymaster: add msm8998 into support list  [Martinusbe]
+   * vendor/tesla/
+0ccdf50  update changelog  [Prema Chand Alugu]
 ====================
-     07-02-2017
+     07-03-2017
 ====================
 
 
@@ -16,6 +109,11 @@
 9013e45  Change the decay timer default to 0.  [Martinusbe]
 9d84cd2  Revert "Allow devices to specify a default decay time"  [Martinusbe]
 7f654f0  Avoid a potential innocuous compiler warning.  [Martinusbe]
+====================
+     07-02-2017
+====================
+
+
    * hardware/qcom/audio-caf/msm8998/
 227036d1e  hal: Allow building hardware audio encoders  [Martinusbe]
 9e7f3aa5a  fix build error  [Martinusbe]
@@ -31,6 +129,8 @@ ebd720eea  vidc: Fix makefiles  [Martinusbe]
 a023385c1  media: Use    * pathmap  [Martinusbe]
    * packages/apps/OmniStyle/
 f37aec7  add new colors  [Mirko]
+   * vendor/tesla/
+df11628  Update Nova 5.3  [Mirko]
 ====================
      07-01-2017
 ====================
@@ -44,20 +144,20 @@ f37aec7  add new colors  [Mirko]
    * packages/apps/TeslaCoil/
 c58cc29  [2/2] Add support for pulsing battery icon regardless of style  [Mirko]
 f3687e9  Use theme accent color for icons - Icon colors are synced with Settings icon colors - This should not affect themes that already have   the correct icon coloring for DU-Tweaks, but it   should fix the rest of the themes  [Mirko]
-   * vendor/tesla/
-df11628  Update Nova 5.3  [Mirko]
 ====================
      06-30-2017
 ====================
 
 
+   * vendor/tesla/
+053172d  Update Magisk Zip 13.0(54e6a79)  [Mirko]
 ====================
      06-29-2017
 ====================
 
 
-   * vendor/tesla/
-053172d  Update Magisk Zip 13.0(54e6a79)  [Mirko]
+   * packages/providers/ContactsProvider/
+1ef7feec  Fix merge derp  [Martinusbe]
 ====================
      06-28-2017
 ====================
@@ -66,8 +166,6 @@ df11628  Update Nova 5.3  [Mirko]
    * manifest/
 96ade3a  Merge branch 'n7.1.2' of git pull ya drunk  [Martinusbe]
 110af68  add 8998 HALs from OnePlus OSS  [Martinusbe]
-   * packages/providers/ContactsProvider/
-1ef7feec  Fix merge derp  [Martinusbe]
 ====================
      06-27-2017
 ====================
@@ -128,41 +226,3 @@ efdc267  power: add msm8998 support from CAF tag LA.UM.5.7.r2-00900-8x98.0  [Mar
 df36fb5  Update Nova Google Companion 1.1  [Mirko]
 09ee4aa  Update Nova 5.3-beta3  [Mirko]
 9cc12af  Add Nova Google Companion 1.0  [Mirko]
-====================
-     06-22-2017
-====================
-
-
-====================
-     06-21-2017
-====================
-
-
-====================
-     06-20-2017
-====================
-
-
-   * frameworks/base/
-d7ce0022ddd  Fix div by zero for QS tile extreme cases  [Mirko]
-0961fd3b681  Adjust quickbar tile gap  [Mirko]
-   * packages/apps/Dialer/
-8b8b3ac40  Fixed Dialer crash issue when finish dialpad immediately  [Mirko]
-b41a7777d  Dialer: lock screen appear before incoming call screen  [Mirko]
-   * packages/apps/Settings/
-ac537a8d2  Correctly align cursor in renaming BT device  [Mirko]
-   * vendor/tesla/
-e988836  update changelog  [Prema Chand Alugu]
-80a3c09  Revert "author in changelong instead of committer"  [Prema Chand Alugu]
-8496e40  update changelog  [Prema Chand Alugu]
-7b46b76  author in changelong instead of committer  [Prema Chand Alugu]
-ac762b1  changelog_tipsy: more info and bling  [Prema Chand Alugu]
-b773ad9     *s: remove despair tc  [Prema Chand Alugu]
-====================
-     06-19-2017
-====================
-
-
-   * vendor/tesla/
-6e92445  Update Nova 5.3-beta2  [Mirko]
-1c4ef58  Update Magisk Manager 5.0.2, Update Magisk Zip 13.0  [Mirko]
