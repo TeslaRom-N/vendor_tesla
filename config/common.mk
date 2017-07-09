@@ -144,10 +144,6 @@ PRODUCT_COPY_FILES += \
    vendor/tesla/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 endif
 
-# Adaway
-PRODUCT_COPY_FILES += \
-vendor/tesla/prebuilt/common/app/adaway.apk:system/app/adaway.apk
-
 ifeq ($(DEFAULT_ROOT_METHOD),magisk)
 # Magisk Manager --> default root method
 PRODUCT_PACKAGES += \
