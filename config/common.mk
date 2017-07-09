@@ -137,10 +137,12 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     org.dirtyunicorns.utils
 
+ifeq ($(DEFAULT_ROOT_METHOD),supersu)
 # SuperSU
 PRODUCT_COPY_FILES += \
   vendor/tesla/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
    vendor/tesla/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+endif
 
 # Adaway
 PRODUCT_COPY_FILES += \
