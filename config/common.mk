@@ -148,8 +148,7 @@ endif
 PRODUCT_COPY_FILES += \
 vendor/tesla/prebuilt/common/app/adaway.apk:system/app/adaway.apk
 
-ifeq ($(DEFAULT_ROOT_METHOD),rootless)
-else
+ifeq ($(DEFAULT_ROOT_METHOD),magisk)
 # Magisk Manager --> default root method
 PRODUCT_PACKAGES += \
     MagiskManager
@@ -157,6 +156,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/tesla/prebuilt/zip/magisk.zip:system/addon.d/magisk.zip
 endif
+
+ifeq ($(DEFAULT_ROOT_METHOD),supersu)
+# SuperSU
+PRODUCT_COPY_FILES += \
+  vendor/tesla/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+   vendor/tesla/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+endif
+
+# Explict rootless defined, or none of the root methods defined,
+# default rootless : nothing todo
+#ifeq ($(DEFAULT_ROOT_METHOD),rootless)
+#endif
 
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
